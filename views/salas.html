@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="periodos.html">Periodos</a></li>
+            <li><a href="professor.html">Professor</a></li>
+            <li><a href="salas.html">Salas</a></li>
+        </ul>
+    </nav>
+    <h1>Salas</h1>
+    
+    <div class="form-container">
+        <h2>Adicionar Salas</h2>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="localidade" placeholder="Localidade">
+        <button onclick="adicionarSala()">Adicionar</button>
+    </div>
+
+    <div class="table-container">
+        <h2>Lista de Professsores</h2>
+        <table id="tabelaPessoas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Localidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+
+    <script src="/js/salas.js"></script>
+</body>
+</html>
