@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial Ensalamento</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="periodos.html">Periodos</a></li>
+            <li><a href="professor.html">Professor</a></li>
+            <li><a href="salas.html">Salas</a></li>
+        </ul>
+    </nav>
+    <h1>Tela Incial</h1>
+    
+    <div class="form-container">
+        <h2>Adicionar Professor</h2>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="matricula" placeholder="Matricula">
+        <button onclick="adicionarProfessor()">Adicionar</button>
+    </div>
+
+    <div class="table-container">
+        <h2>Lista de Professores</h2>
+        <table id="tabelaPessoas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Matricula</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+
+    <script src="/js/professor.js"></script>
+</body>
+</html>
